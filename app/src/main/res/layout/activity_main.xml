@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity" android:background="#555">
+    <TextView
+            android:text="Create new Account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/textView2" android:textAlignment="center"
+            android:textSize="24sp" android:layout_marginTop="20pt"/>
+    <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/user_email_reset" android:background="#fff"
+            android:layout_centerInParent="true" android:padding="10dp" android:hint="youremail@gmail.com"/>
+    <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/user_password" android:layout_below="@+id/user_email_reset"
+            android:layout_centerHorizontal="true" android:layout_marginTop="10dp" android:background="#fff"
+            android:padding="10dp" android:hint="add your password"/>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:weightSum="2">
+        <Button
+                android:text="Login"
+                android:onClick="Login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/login_btn" android:layout_weight="1"
+                android:textColor="#fff" android:background="#cc2323"/>
+        <Button
+                android:text="Sign Up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/signup_btn" android:layout_weight="1"
+                android:background="@color/colorPrimaryDark" android:textColor="#fff"/>
+    </LinearLayout>
+</RelativeLayout>
